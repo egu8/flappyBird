@@ -37,7 +37,7 @@ if __name__ == '__main__':
     dqn = DQN(env)
 
     import torch
-    dqn.eval_net.load_state_dict(torch.load("600_weights.pt",map_location=torch.device('cpu')))
+    dqn.eval_net.load_state_dict(torch.load("standard.pt",map_location=torch.device('cpu')))
 
     episode_count = 100
     reward = 0
@@ -77,8 +77,8 @@ if __name__ == '__main__':
 
             s = s_
 
-            # clock.tick(30)
-            # env.render()
+            clock.tick(30)
+            env.render()
 
         print("episode: " + str(i) + " DONE")
 

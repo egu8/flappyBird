@@ -37,8 +37,8 @@ if __name__ == '__main__':
     dqn = DQN(env)
 
     import torch
-    dqn.eval_net.load_state_dict(torch.load("best_weights_by_far.pt",map_location=torch.device('cpu')))
-    dqn.target_net.load_state_dict(torch.load("best_weights_by_far.pt",map_location=torch.device('cpu')))
+    dqn.eval_net.load_state_dict(torch.load("standard.pt",map_location=torch.device('cpu')))
+    dqn.target_net.load_state_dict(torch.load("standard.pt",map_location=torch.device('cpu')))
 
     episode_count = 1001
     reward = 0
