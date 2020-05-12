@@ -9,7 +9,7 @@ import numpy as np
 
 # Hyper Parameters
 BATCH_SIZE = 32
-LR = 5e-7  # learning rate
+LR = 1e-7  # learning rate
 EPSILON = 1  # greedy policy
 GAMMA = 0.95  # reward discount
 TARGET_REPLACE_ITER = 50  # target update frequency
